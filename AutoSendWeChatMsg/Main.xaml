@@ -1,0 +1,165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="542,1463" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="43">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,2278" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_UserList" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[DT_UserList]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\Sumool\Desktop\用户列表.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_UserList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,2059" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1936" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Name" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,95" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Name]" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 微信" sap:VirtualizedContainerService.HintSize="434,1608" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="29e08079-06fe-4a0f-9249-38326d76e7c8" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,1313" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[Name]" />
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '搜索 发起群聊'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="29e08079-06fe-4a0f-9249-38326d76e7c8" Shortcuts="[d(hk)][d(ctrl)]f[u(ctrl)][u(hk)]" Version="V1">
+                      <uix:NKeyboardShortcuts.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="54, 0, 249, 62" FriendlyName="'搜索 发起群聊'" FullSelectorArgument="&lt;ctrl idx='11' role='pane' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='pane' check:fulltext='搜索&amp;#xD;&amp;#xA;发起群聊' /&gt;" Guid="42b9ae62-cf47-483e-8c05-f71ceab018e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP0AAABACAYAAADRYXFXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARaSURBVHhe7dy9TutIGIfxvSKuh4IScR90SHS5Bd8AUhokSl9CBOUekhwKehDlrN/Yc/z19+TDztHG71P8NM7EI1u7eWyHXeWfq6urYH5+fgDM2NvbW/j+/g5EDzhB9IAzRA84Q/SAM0QPOEP0gDNEDzhD9IAzRA84Q/SAM0QPOEP0gDNEDzhD9IAzRA84Q/SAM0QPOEP0gDNEDzhD9IAzRA84Q/SAM0QPOEP0gDOTRP/19RU+Pz/Dx8dH2Gw2wOzYZ9s+4/ZZVw2kTN3HmHMxo6O3A2+3W3lywNzYZ/2Y2M7Zx7HnEo2O3q446oSAubLPvGpBOXcfx5xLNDp6HunhjX3mVQvKufs45lyi0dGrEwHmTrWgqLVTU8dNIXrgBKoFRa2dmjpuymVEn2dhsVy1Xt8vspAtFmG5auw3YLVctNcDI6kWFLV2auq4KWeNfrVahYeHh3B3d7dj2zan9k36E/0qLBf34f4+C/luexGybFG8trl4AchDtnu9z2EXDEBRLShqbcr19bWcT1HHTTlb9Bb37e1tEWUWXl9fd2zb5o4Jv4y80rq7l9HHcPMi/qGIudNjaqoFRa1Nuejo7a5ukXfnbc7e684n9e70jQvAsnjUb9657dE/XiT2yPLOcYADqRYUtTbloqO3x3m7u3fnbc7e684ntaLfc6f/s6/N26O+fRUo99kUTxiratvu/kSPU6kWFLU2heijePfe3d37d+xSfQEwFnVvH7tIEDomoFpQ1NoUHu8L8XG+/528faeXVsuwaN7pq4sHd3iMpVpQ1NrIAj+UWh+p46b89T/k3dzchKenJ7lmUOvxvnP3jrK83n8Xu9inZc8FA0hQLShqbcq+wBV13JSzRW/Uf7J7fn7eXQxeXl7kGqn1Pb0Mv75b2/f2PQHbHb55UQBGUi0oam3KxUc/JM/z48JvRV/Ks3jHbjy+N5Tf6av3YvTxCYALAEZSLShqbcpsozeHhh//IGfR16HX4bbmFsuwrF7b/s0/5rW+x9tFwOaJHydSLShqbcqsozcW/uPjo3wP+D9TLShqbcrsowculWpBUWunpo6bQvTACVQLilo7NXXcFKIHTqBaUNTaqanjpoyOnl/OgTfufzmH38iDN+5/I49fw4Un/BpuxQ5sVxwe9TFX9tm2z/gpkU3dx5hzMZNED+ByED3gDNEDzhA94AzRA84QPeAM0QPOED3gDNEDzhA94AzRA870orf/pxfAfPWi367fK2th07dJ22y2rXFbjOV2qbmdei9u2zisPE693VGcb9+6Z90Y93p/r8c9No1xUPHPvrV9hO3619Hj0d7P4d+K2q7H3+v4XpvN18r96rFLvW/bXUPz5/PRGdVcczxVMnr74CfDL0I6jAUbx2lY2HEcVkStVMGvq7He7sd/kCLQ3jjAYo5jUvHvoDeeyGI9dBxk8TW3R7FYh+aaY5qFWY71/nXITRbKofNxroxLz/19FuvQGHVfDymj/w7/AWjXPrhfNugKAAAAAElFTkSuQmCC" InformativeScreenshot="b147f3cc131ef3cb21c9df5dab000bfb.png" ScopeSelectorArgument="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NKeyboardShortcuts.Target>
+                    </uix:NKeyboardShortcuts>
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,181" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V1" />
+                    <uix:NClick ClickType="Single" DisplayName="Click '&lt;em&gt;the&lt;/em&gt; &lt;em&gt;1&lt;/em&gt;'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="29e08079-06fe-4a0f-9249-38326d76e7c8" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="112, 109, 174, 28" ElementType="Text" FriendlyName="'&lt;em&gt;the&lt;/em&gt; &lt;em&gt;1&lt;/em&gt;'" FullSelectorArgument="&lt;ctrl name='搜索结果' role='list' /&gt;&lt;ctrl name='the 1' role='list item' /&gt;&lt;ctrl name='&amp;lt;em&amp;gt;the&amp;lt;/em&amp;gt; &amp;lt;em&amp;gt;1&amp;lt;/em&amp;gt;' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='搜索结果' role='list' /&gt;&lt;ctrl name='the 1' role='list item' /&gt;&lt;ctrl name='&amp;lt;em&amp;gt;the&amp;lt;/em&amp;gt; &amp;lt;em&amp;gt;1&amp;lt;/em&amp;gt;' role='text' automationid='' check:text='&amp;lt;em&amp;gt;the&amp;lt;/em&amp;gt; &amp;lt;em&amp;gt;1&amp;lt;/em&amp;gt;' /&gt;" Guid="4c5a0804-7166-4f85-8e62-475576e30c13" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALIAAAAgCAYAAAC2JCIgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFBSURBVHhe7dgxDoIwGIZhr8FluAo34SKcwYmBuDk5OfVCvxRQaFNjI1Xjl3d4YkJLWF7+VA7OOQP+HSFDAiFDAiFDAiFDAiFDAiFDAiFDAiFDAiFDAiFDwsuQu1Nl9XlIru3XWXOsrb2m1oB8QcjDubaqb23YXPtUyNOzjtWIkLHfT0KennPqzF1bqwkZBTxCbns/HTd8aOP1e8j+97EWxe6tE9ZrrIvWkwgZhWRNZB9nc7lf8+facErH981RZ8RMyCgkL+RlOqf3pf6wzbGv8T9ByCjkrTNysO/SbI4UIULGtxQKOfNMHCNkFLI/5CnGjOmbQsgoJAg5NV1fhrzsCe8bz8jRC5FEyCgkDNkN62e46PPbdt+zyb2ej/n8hu+KQgb+EyFDAiFDAiFDAiFDAiFDAiFDAiFDAiFDAiFDgLMboMJrse0Q2YUAAAAASUVORK5CYII=" InformativeScreenshot="12e987ffdfb2f3fcf4ca087f2024c335.png" ScopeSelectorArgument="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '输入'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="29e08079-06fe-4a0f-9249-38326d76e7c8" Text="2021[k(enter)]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="304, 532, 606, 72" ElementType="InputBox" FriendlyName="'输入'" FullSelectorArgument="&lt;ctrl name='输入' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='输入' role='editable text' automationid='' /&gt;" Guid="f60b1bb2-bdac-47c7-965f-2f30a9752086" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmAAAABMCAYAAADKmgu0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVHhe7djJdcIAFATBn3+AhIAk0OIMZA6OoTm46jQh9Jt5Pp/34/G4AQBoCDAAgJgAAwCICTAAgJgAAwCICTAAgNjXAmxm/hYAwP8iwAAAYgIMACAmwAAAYgIMACAmwAAAYrMIMACAlAADAIgJMACAmAADAIgJMACA2CfAFgEGABASYAAAMQEGABCbZRFgAAAlAQYAEBNgAACxWQUYAEBKgAEAxAQYAEBMgAEAxAQYAEBMgAEAxGZdVwEGABASYAAAMQEGABCb7UsBBgDwXwkwAICYAAMAiM22bQIMACAkwAAAYgIMACAmwAAAYvMSYAAAKQEGABATYAAAsXm9XgIMACA0bwEGAJASYAAAsU+AvQUYAEBIgAEAxGZ/CzAAgJIAAwCICTAAgJgAAwCIzb7vAgwAICTAAABicwgwAICUAAMAiM1xHAIMACAkwAAAYgIMACA2pwADAEgJMACA2JznKcAAAEICDAAgJsAAAGICDAAgJsAAAGJzCTAAgJQAAwCICTAAgJgAAwCIzXVdAgwAICTAAABiAgwAIDY/AgwAIOUBAwCIecAAAGICDAAgdd+//l7TAQBFxroAAAAASUVORK5CYII=" InformativeScreenshot="6dec43e389415d6bde8d57857e390fda.png" ScopeSelectorArgument="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '输入'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="29e08079-06fe-4a0f-9249-38326d76e7c8" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
+                      <uix:NKeyboardShortcuts.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="304, 532, 606, 72" ElementType="InputBox" FriendlyName="'输入'" FullSelectorArgument="&lt;ctrl name='输入' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='输入' role='editable text' automationid='' /&gt;" Guid="f1b5146f-bd4c-4c1e-b19c-e4b64bc3cc44" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmAAAABMCAYAAADKmgu0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVHhe7djJdcIAFATBn3+AhIAk0OIMZA6OoTm46jQh9Jt5Pp/34/G4AQBoCDAAgJgAAwCICTAAgJgAAwCICTAAgNjXAmxm/hYAwP8iwAAAYgIMACAmwAAAYgIMACAmwAAAYrMIMACAlAADAIgJMACAmAADAIgJMACA2CfAFgEGABASYAAAMQEGABCbZRFgAAAlAQYAEBNgAACxWQUYAEBKgAEAxAQYAEBMgAEAxAQYAEBMgAEAxGZdVwEGABASYAAAMQEGABCb7UsBBgDwXwkwAICYAAMAiM22bQIMACAkwAAAYgIMACAmwAAAYvMSYAAAKQEGABATYAAAsXm9XgIMACA0bwEGAJASYAAAsU+AvQUYAEBIgAEAxGZ/CzAAgJIAAwCICTAAgJgAAwCIzb7vAgwAICTAAABicwgwAICUAAMAiM1xHAIMACAkwAAAYgIMACA2pwADAEgJMACA2JznKcAAAEICDAAgJsAAAGICDAAgJsAAAGJzCTAAgJQAAwCICTAAgJgAAwCIzXVdAgwAICTAAABiAgwAIDY/AgwAIOUBAwCIecAAAGICDAAgdd+//l7TAQBFxroAAAAASUVORK5CYII=" InformativeScreenshot="f959af47713da75a55b96529eff6125b.png" ScopeSelectorArgument="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NKeyboardShortcuts.Target>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="424, 194, 910, 640" Arguments="[CurrentRow(0).ToString()]" FilePath="C:\Program Files (x86)\Tencent\WeChat\wechat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOGSURBVFhH7dR7SFNxFAfwVRYzCiNRe1lJb3tK9KCSHkYPKo1EUrQyodlKq+lSy5xR9C5S+qP+yPonQUgwtxCyP4qIEHQzzZazpdM93ftqRkl5Ovf6s3Z1zr2iP+oLH3Z3zn7nXMbdOP/jbg53nw9EIWgiKf3ZHKRE01O7CoWoOrXrvAkXg4MurL9GFw5RhYvIEf8k0VowNdkuephiF/UicEMffr4q0VawhIzwPvHm/NgE6zkrAi98i7fkC8goz7PHeCY1znT2OwJfxBrP3iAj3c82fV70TsOZXgSOdhjyWO8HG66/3ZDHI6NHzkZNztgtutyWGF0uOIp6mQZh17ZCxIM42Kw+zerRFpTvh9CrMRBZmTSkh/O6N2lzppIVrrNeLUyJxgWDzbi7C0KvxDBWSvms3rrWLAi5vOVXf0MH+yxtg/r0dbLCdVa3Z0vWtAthsPlPk5kl0+7shFVKwZD+zId7mf7sR/uG9Gir24UqssJ1olqzDFFtWeDMMnkmrPgkcNrDc7C0KYN5dayvbcuBPe2XIL7jKpQaXyy32m1jyCrnWaI89QOBLza1ieC2vhKkFgXYKDtQFOWox263V6M0xCVrf2d+y8nPCLwR+VEAt7RPwGgzAw53R4fNZoslq/sT0ZxZF9F8Ajy1WCGE550ywIGe6kMisp7DmSHPuIjAE+H4bIj1NWC1Wn3BZ25gStPx8LCm418RuIvfeh8sFssvZrMZqqqqoKKiAgwGA6unUCigrKwMamtrWXXUg+fCmZsIbuRfCH53DNzSeAxqDc3M0gFKpRKKioqguLgYZDIZqycWi5l6SUkJq070/21PajgaENRw9FlQAx9Gsvx9/pBBRqMRJBIJlJeXg06nY/XkcjmUlpZCTU0Nq04zmUxy5gboTKxPHz+hPl2CwJVdH24yC/2kl6zvT6CMN4or473hytJhONvlN5wN8tY3svp3xkl5zQgIyuGaMedtLnR2dvpLI1nbn4C6I+EBUl4fasHr3aQ2N6COl4Cy8Vo0721eTotOpaCfdj+4xCweyFgpbyESonGk5DQdOk2SXq8HH1FoChnpefBpf0w/8V7qQwfIKO+i1Wq5SILAQ9/RSTLGt2g0mtFIiKhBS4aFny0kx/0XHDoZZaFX6AuiFw0wIrFarVbR7/H1Hjn2Z4IL6G8lDM1Ck0iZrnORCElJ6e9EpVK5/IX9a+FwfgIMNNw9kcQaMgAAAABJRU5ErkJggg==" InformativeScreenshot="e5d86c4e92f283140b6f38ca2aefb0b3.png" Selector="&lt;wnd app='wechat.exe' cls='WeChatMainWndForPC' title='微信'/&gt;" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
